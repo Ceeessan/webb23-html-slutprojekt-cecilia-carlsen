@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Pacifico&family=Rubik+Iso&family=Sacramento&family=Tangerine:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Ribeye+Marrow&display=swap"
+            rel="stylesheet"
+        />
+
+        <link href="Style/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <input type="checkbox" id="toggle" />
+
+        <nav>
+            <a class="navbar" href="#"> Cecilia Linnéa</a>
+
+            <label class="toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <ul class="navlista">
+                <li class="nav-it">
+                    <a class="nav-link" href="index.html">Projekt</a>
+                </li>
+                <li class="nav-it">
+                    <a class="nav-link" href="info.html">Om mig</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 class="information10">Information om mig</h1>
+            <div class="container10">
+                <div class="ruta0">
+                    <!--Min picture-tag som är kombinerar med mobilvyn. När det är mobilvy, är det en annan bild.-->
+                    <picture>
+                        <source
+                            media="(min-width:1700px)"
+                            srcset="Bilderna/ceecilia.jpg"
+                        />
+                        <source
+                            media="(min-width:750px)"
+                            srcset="Bilderna/meagain.jpg"
+                        />
+                        <img src="Bilderna/ceecilia.jpg" alt="jag" />
+                    </picture>
+                </div>
+                <div class="rutan">
+                    <h3 class="intr">Intressen:</h3>
+                    <ul>
+                        <li class="intresse">Dansa</li>
+                        <li class="intresse">Kolla serier/film</li>
+                        <li class="intresse">Träna</li>
+                        <li class="intresse">Läsa böcker</li>
+                        <li class="intresse">Promenader</li>
+                        <li class="intresse">Upptäcka</li>
+                    </ul>
+                </div>
+                <div class="ruta30">
+                    <p class="ommig">
+                        Cecilia heter jag och är 28 år gammal. Jag studerar just
+                        nu Webbutveckling med inriktning e-handel på grit
+                        Academy i Malmö. Innan jag bestämde mig för att ta denna
+                        nya och roliga väg frammåt i min karriär, så har jag
+                        studerat dans. Dans är ett intresse som jag har och det
+                        intresset har gett mig mycket erfarenhet, såsom
+                        diciplin, kreativitet och att jobba självständigt.
+                    </p>
+                </div>
+            </div>
+
+            <!--Här är min bootstrap, vilket är en card-body med
+     en knapp som tar dig tillbaka till förstasidan.-->
+            <div class="card" style="display: flex; width: 18rem">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center"></h5>
+                    <p class="card-text">
+                        Klicka på knappen om du vill tillbaka till förstasidan.
+                    </p>
+                    <a href="index.html" class="btn btn-primary"
+                        >Gå till förstasidan</a
+                    >
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <ul class="foten">
+                    <li class="copyright1">&copy; 2023</li>
+
+                    <li class="kontakta1">Kontakta mig:</li>
+
+                    <li class="mailamig1">
+                        <a
+                            class="mailamig1"
+                            href="mailto:ceccan__94@hotmail.com"
+                            >Cessan__94@hotmail.com</a
+                        >
+                    </li>
+                </ul>
+                <ul class="medi1">
+                    <li class="media1">
+                        <a
+                            class="media1"
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            ><ion-icon name="logo-facebook"></ion-icon
+                        ></a>
+                    </li>
+
+                    <li class="media1">
+                        <a
+                            class="media1"
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            ><ion-icon name="logo-instagram"></ion-icon
+                        ></a>
+                    </li>
+
+                    <li class="media1">
+                        <a
+                            class="media1"
+                            href="https://www.linkedin.com/feed/"
+                            target="_blank"
+                            ><ion-icon name="logo-linkedin"></ion-icon
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+    </body>
+</html>
